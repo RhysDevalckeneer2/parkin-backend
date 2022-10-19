@@ -18,6 +18,8 @@ public class User {
     @Column(unique = true)
     private String username;
 
+    private String password;
+
     @CreationTimestamp
     @Column(name = "created_at")
     private Date createdAt;
@@ -25,4 +27,8 @@ public class User {
     @CreationTimestamp
     @Column(name = "updated_at")
     private Date updatedAt;
+
+    public User() {}
+
+    // Getters & Setters
 }
